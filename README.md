@@ -45,6 +45,6 @@ const age = getUser(person, "age");   // returns number
 
     const user2: User = {name: "Miraz"};  // Error,Missing id.Because an intersection type means a  value must satisfy all types at once.So we have to add id other wise it will be error.
 
-     const user2: User ={name:"Miraz" & id:27}; //ok.
+     const user2: User ={name:"Miraz",id:27}; //ok.
 ```   
            

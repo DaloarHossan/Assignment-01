@@ -16,13 +16,8 @@ function formatString(input: string, toUpper?: boolean): string {
  
  }
 
- const books = [
-    { title: "Book A", rating: 4.5 },
-    { title: "Book B", rating: 3.2 },
-    { title: "Book C", rating: 5.0 }
-  ];
-  
-  filterByRating(books)
+ 
+ 
 
 
   function concatenateArrays<T>(...arrays: T[][]):T[]{
@@ -35,8 +30,7 @@ function formatString(input: string, toUpper?: boolean): string {
     
 
   }
-  concatenateArrays(["a", "b"], ["c"]);       
-  concatenateArrays([1, 2], [3, 4], [5]);   
+   
   
 
 
@@ -63,10 +57,7 @@ function formatString(input: string, toUpper?: boolean): string {
         console.log(`Model:${this.model}`)
     }
    }
-
-    const myCar = new Car("Toyota", 2020, "Corolla");
-     myCar.getInfo();   
-     myCar.getModel();  
+ 
      
     
      function processValue(value: string | number): number{
@@ -78,8 +69,7 @@ function formatString(input: string, toUpper?: boolean): string {
             return value*2
         }
      }
-     processValue("hello"); 
-     processValue(10);  
+     
     
 
      interface Product {
@@ -101,14 +91,7 @@ function formatString(input: string, toUpper?: boolean): string {
         console.log(highestPrice)
         return highestPrice
       }
-      const products = [
-        { name: "Pen", price: 10 },
-        { name: "Notebook", price: 25 },
-        { name: "Bag", price: 50 }
-      ];
       
-      getMostExpensiveProduct(products);  
-    
 
 
       enum Day {
@@ -123,8 +106,10 @@ function formatString(input: string, toUpper?: boolean): string {
       
       function getDayType(day: Day): string{
         if(day===Day.Saturday || day===Day.Sunday){
+            console.log("Weekend")
             return "Weekend"
         }else{
+            console.log("Weekday")
             return "Weekday"
         }
       }
@@ -143,3 +128,4 @@ function formatString(input: string, toUpper?: boolean): string {
         })
       }
       
+     
